@@ -1,12 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Planning - Home</title>
+    <meta
+      name="description"
+      content="Website with fitness planning"
+    />
+    <link rel="logo icon" href="../images/logoico.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Open+Sans&display=swap "
+      rel="stylesheet "
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="top_header">
+        <img class="logo" src="images/logo.png" alt="brand logo" />
+        <h1>Bountiful Inn & Suites</h1>
+
+        <div class="social">
+          <a href="https://www.facebook.com">
+            <img src="images/facebook.png" alt="facebook icon"
+          /></a>
+          <a href="https://www.instagram.com">
+            <img src="images/instagram.png" alt="instagram icon"
+          /></a>
+        </div>
+      </div>
+      <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="firstNav">
+          <li class="active">
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="temple.html">Temple</a>
+          </li>
+          <li>
+            <a href="services.html">Services</a>
+          </li>
+          <li>
+            <a href="reservation.html">Reservations</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="central">
+      <div class="hero">
+        <img src="images/bountiful-temple.jpg" alt="bountiful temple" />
+        <div class="action">
+          <form action="reservation.html">
+            <button>Make Your Reservation</button>
+          </form>
+        </div>
+        <p></p>
+      </div>
+      <div class="event">
+        <p>
+          Welcome to Bountiful Inn & Suites. The best place to stay when you are
+          visiting the Bountiful Temple.
+        </p>
+      </div>
+      <div class="weather">
+        <p>Weather</p>
+        <div>
+          <p><span id="currtemp"></span>&#176;F</p>
+          <figure>
+            <span id="iconsrc"></span>
+            <img
+              src="https://openweathermap.org/img/w/"
+              alt="Weather Icon Picture"
+              id="weather_icon"
+            />
+            <hr />
+            <figcaption></figcaption>
+          </figure>
+          <p>Wind Speed: <span id="windspeed"></span> mph</p>
+          <hr />
+          <p>Wind Chill: <span id="windchill"></span></p>
+        </div>
+      </div>
+    </main>
+    <div class="today"></div>
+
+    <footer>
+      <div class="footer_top">
+        <img class="logo" src="images/logo.png" alt="brand logo" />
+      </div>
+      <p class="footer_data">
+       <br />📌<a
+          target="_blank"
+          href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814,+EUA/@38.9832518,-77.0955318,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318"
+          >Location Map</a
+        ><br />albertoalmadadev@gmail.com<br />+ 55 (11) 96604-8640
+      </p>
+      <p class="footer_bottom">
+        &copy; <span id="year"></span> <span id="lastUpdate"></span> |
+        <a target="_blank" href="http://www.openweathermap.org"
+          >openweathermap.org</a
+        >
+      </p>
+    </footer>
+
+    <script src="js/date.js"></script>
+    <script src="js/localStorage.js" defer></script>
+    <script src="js/windchill.js"></script>
+  </body>
 </html>
