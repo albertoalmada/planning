@@ -5,7 +5,7 @@ const windspeed = document.querySelector("#windspeed");
 const windchill = document.querySelector("#windchill");
 
 const url =
-  "//api.openweathermap.org/data/2.5/weather?q=Manderfield&units=imperial&appid=9a7a792ce71b0657e7b7fb44bf7c2eca";
+  "//api.openweathermap.org/data/2.5/weather?q=Mesquite,Nevada,US&units=imperial&appid=9a7a792ce71b0657e7b7fb44bf7c2eca";
 fetch(url)
   .then((response) => response.json())
   .then((data) => {

@@ -4,8 +4,8 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(
 datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
 
 document.querySelector('#year').innerHTML = (new Date().getFullYear());
-document.querySelector('#lastUpdate').innerHTML = `Bountiful Inn & Suites | Alberto Parreira Almada | 
-WDD 230 Final Project |<br> Last Updated: ${document.lastModified}`;
+document.querySelector('#lastUpdate').innerHTML = ` | Alberto Parreira Almada - CREF 005993-G/SP 
+ |<br> Last Updated: ${document.lastModified}`;
 
 function toggleMenu() {
     document.getElementById("firstNav").classList.toggle("open");
